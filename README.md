@@ -19,8 +19,8 @@ Features:
 * apply binarization and tresholding
 * trace boundaries using resizable brush tool in black or white
 * create image labels for a Resnet34 model (max. 2 classifications)
-* create and train a ResNet34 model with created labels
-* predict images using a trained ResNet34 model
+* create and train a ResNet34 model by using the labels
+* predict images with a trained ResNet34 model
 
 ### manualSegmentation.py
 Use this script for manual label creation. After that, create labels using the image crop tool.
