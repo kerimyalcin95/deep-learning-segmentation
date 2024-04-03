@@ -31,7 +31,7 @@ Use this script for creating and training a ResNet34 model. After that, predict 
 
 ![Image of semanticSegmentation.py after predicting an image using a trained model](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation01.jpg "Screenshot of semanticSegmentation.py in action")
 ## Installation
-The application can either be started by using the executable or directly by running the scripts after installing Python and the required packages.
+The application can either be started using the executable or directly by running the scripts after installing Python and the required packages.
 ### Installing the Executable
 ### Installing Python
 ### Installing required packages
