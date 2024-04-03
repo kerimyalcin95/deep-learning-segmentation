@@ -18,7 +18,7 @@ Features:
 * use filters to change brightness and gaussian-blur amount of loaded images
 * apply binarization and tresholding
 * trace boundaries using resizable brush tool in black or white
-* create image labels for a Resnet32 model (max. 2 classifications)
+* create image labels for a Resnet34 model (max. 2 classifications)
 * create and train a ResNet34 model with created labels
 * predict images using a trained ResNet34 model
 
