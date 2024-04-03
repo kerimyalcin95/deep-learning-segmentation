@@ -24,7 +24,7 @@ Features:
 
 ### manualSegmentation.py
 Use this script for manual label creation.
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/master/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")
 ### semanticSegmentation.py
 Use this script for creating and training a ResNet34 model. Predict images using the trained model.
 ![Image of semanticSegmentation.py after predicting an image using a trained model](https://github.com/kerimyalcin95/deep-learning-segmentation/screenshots/semanticSegmentation01.jpg "Screenshot of semanticSegmentation.py in action")
