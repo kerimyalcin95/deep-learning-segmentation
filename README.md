@@ -104,7 +104,41 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 You find the labels in `/images`, `/labels` and `/raw/labels`. The labels in `/images` and `/labels` are required to train a model. Use the labels in `/raw/labels` for your own documentation purposes.
 
 ### Train and Save a Model
-### Predict an Image from a Loaded Model
+1. start `semanticSegmentation` (this may take a while depending of how fast your setup is)
+2. set to TRAIN mode with `[TRAIN mode/PREDICT mode]`
+3. set the path and name of the model with `[Save path]`
+4. start model training with `[TRAIN]` (this can take at least 10 min or more)
+5. close `semanticSegmentation`
+
+Console output while training should be something like:
+```
+-- Starting thread
+-- Running TRAIN mode
+-- Home path: .
+epoch     train_loss  valid_loss  time
+0         0.729087    0.415635    01:34
+epoch     train_loss  valid_loss  time
+Epoch 1/6 : |███████-----------------------------------------------------| 12.50% [1/8 00:10<01:14]
+```
+
+### Predict an Image From a Loaded Model
+1. start `semanticSegmentation` (this may take a while depending of how fast your setup is)
+2. on the left side load an image which you want to predict using `[Load Image]`
+3. set to PREDICT mode with `[TRAIN mode/PREDICT mode]`
+4. load the model with `[Load path]`
+5. start model prediction with `[PREDICT]` (this can take at least 1 min or more)
+6. on the right side save the predicted image using `[Save image]`
+7. close `semanticSegmentation`
+
+Console output after prediction should be something like:
+```
+-- Starting thread
+-- Running PREDICT mode
+-- Try to load model at: C:/Users/path/to/your/model/your_trained_model.pkl
+fastai\learner.py:59: UserWarning: Saved file doesn't contain an optimizer state.
+  elif with_opt: warn("Saved file doesn't contain an optimizer state.")
+-- Thread finished
+```
 
 ## Notice
 * Reading and saving image file names are not supported in Unicode due to OpenCV `imread` and `imwrite` function.
