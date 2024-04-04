@@ -74,6 +74,22 @@ Steps:
 After that, you should see the directories `/labels`, `/images`, `/raw` and `/raw/labels` created automatically.
 
 ## Manual
+### Preparing image label creation
+1. start `manualSegmentation`
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")
+2. on the left side load an image with `[Load Image]`
+3. adjust thresholding output using brightness and gaussian-blur filters
+4. adjust brush size and brush color with `[Black/White]`
+5. invert the image with `[Invert]`
+6. align both previews with `[Sync]`
+7. on the right side trace image features using the brush tool
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")
+9. if necessary, save the output image for later tracing with `[Save Image]`
+   
+### Create image reference labels
+### Create and train a model
+### Predict an image from a model
+
 ## Notice
 * Reading and saving image file names are not supported in Unicode due to OpenCV `imread` and `imwrite` function.
   Avoid file names containing chars like Umlaute äüö or special characters.
