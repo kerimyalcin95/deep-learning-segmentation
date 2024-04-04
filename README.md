@@ -33,7 +33,7 @@ Use this script for creating and training a ResNet34 model. After that, predict 
 ## Installation
 The application can either be started using the executable or directly by running the scripts after installing Python and the required packages.
 ### Installing the Executables
-The executables are created using [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/) by Brent Vollebregt and can be downloaded [here](https://github.com/kerimyalcin95/deep-learning-segmentation/releases) under *Assets*.
+The executables are created using [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/) by Brent Vollebregt and can be downloaded [here](https://github.com/kerimyalcin95/deep-learning-segmentation/releases) under *Assets*. The interpreter version used is: Python 3.11.8
 
 Steps:
 1. create a folder named *structureAnalysis* or similar
@@ -44,6 +44,12 @@ Steps:
 After that, you should see the directories `/labels`, `/images`, `/raw` and `/raw/labels` created automatically.
 
 ### Installing Python
+Steps:
+1. Download [Python 3.11.x](https://www.python.org/downloads/)
+2. Run the installation (add environment PATH, remove MAX_PATH limitation)
+3. open `cmd.exe` and type `python --version`
+
+You should see something like `Python 3.x.x` on the console output.
 ### Installing required packages
 ## Manual
 ## Notice
