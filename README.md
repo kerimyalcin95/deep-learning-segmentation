@@ -75,16 +75,16 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 
 ## Manual
 ### Preparing image label creation
-1. start `manualSegmentation`
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")
-2. on the left side load an image with `[Load Image]`
-3. adjust thresholding output using brightness and gaussian-blur filters
-4. adjust brush size and brush color with `[Black/White]`
-5. invert the image with `[Invert]`
-6. align both previews with `[Sync]`
-7. on the right side trace image features using the brush tool
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")
-9. if necessary, save the output image for later tracing with `[Save Image]`
+1. start `manualSegmentation`<br><br>
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")<br>
+3. on the left side load an image with `[Load Image]`
+4. adjust thresholding output using brightness and gaussian-blur filters
+5. adjust brush size and brush color with `[Black/White]`
+6. invert the image with `[Invert]`
+7. align both previews with `[Sync]`
+8. on the right side trace image features using the brush tool<br><br>
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br>
+9. save the output image for later tracing with `[Save Image]`
    
 ### Create image reference labels
 ### Create and train a model
