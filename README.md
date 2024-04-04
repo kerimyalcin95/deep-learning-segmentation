@@ -4,7 +4,7 @@
   * [manualSegmentation.py](#manualsegmentationpy)
   * [semanticSegmentation.py](#semanticsegmentationpy)
 * **[Installation](#installation)**
-  * [Installing the Executable](#installing-the-executable)
+  * [Installing the Executables](#installing-the-executables)
   * [Installing Python](#installing-python)
   * [Installing required packages](#installing-required-packages)
 * **[Manual](#manual)**
@@ -32,7 +32,7 @@ Use this script for creating and training a ResNet34 model. After that, predict 
 ![Image of semanticSegmentation.py after predicting an image using a trained model](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation01.jpg "Screenshot of semanticSegmentation.py in action")
 ## Installation
 The application can either be started using the executable or directly by running the scripts after installing Python and the required packages.
-### Installing the Executable
+### Installing the Executables
 The executables are created using [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/) by Brent Vollebregt and can be downloaded [here](https://github.com/kerimyalcin95/deep-learning-segmentation/releases) under *Assets*.
 
 Steps:
