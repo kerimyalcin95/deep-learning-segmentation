@@ -116,9 +116,10 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 ![Image of manualSegmentation.py after tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br><br>
 4. set image size (default: 336x336 px)
 5. set image increment (default: 0) which saves each image counting upwards
-6. on the right side click to save one label each (until you have about 60-80 labels; image increment adds one [increments] each time)<br><br>
+6. turn on image crop mode using `[Save-Crop ON/Save-Crop OFF]`
+7. on the right side click to save one label each (until you have about 60-80 labels; image increment adds one [increments] each time)<br><br>
 ![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")<br><br>
-7. close `manualSegmentation`
+8. close `manualSegmentation`
 
 You find the labels in `/images`, `/labels` and `/raw/labels`. The labels in `/images` and `/labels` are required to train a model. Use the labels in `/raw/labels` for your own documentation purposes.
 
