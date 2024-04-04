@@ -16,8 +16,9 @@
 * **[Notice](#notice)**
     
 ## About
-Used for image label creation, ResNet34 neural network model (arch) training and image prediction.
-Based on the bachelor-thesis "Microstructure analysis of materials with the assistance of artificial technology" by Kerim Yalcin on February 2024. 
+Use it for various segmentation task. Features include image label creation, ResNet34 neural network model (arch) training and image prediction.
+
+Based on the bachelor-thesis "Microstructure analysis of materials with the assistance of artificial technology" by Kerim Yalcin on February 2024.
 
 Usage examples:
 * metallographic image segmentation 
