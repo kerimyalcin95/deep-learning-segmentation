@@ -39,10 +39,10 @@ Features:
 
 Implemented packages
 * `tkinter` - integrated GUI library in Python
-* `PIL` - 
-* `OpenCV`
-* `fastai v2`
-* `numpy`
+* `PIL` - image processing library
+* `OpenCV` - computer vision library
+* `fastai v2` - deep learning library
+* `numpy` - library for arrays and matrices
 * `threading` - integrated threading library in Python
 
 ### manualSegmentation.py
