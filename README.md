@@ -9,6 +9,10 @@
   * [Installing Required Packages](#installing-required-packages)
   * [Installing Script Files](#installing-script-files)
 * **[Manual](#manual)**
+  * [Preparing Image Label Creation](#preparing-image-label-creation)
+  * [Create Image Reference Labels](#create-image-reference-labels)
+  * [Train and Save a Model](#train-and-save-a-model)
+  * [Predict an Image From a Loaded Model](#predict-an-image-from-a-loaded-model)
 * **[Notice](#notice)**
     
 ## About
@@ -74,7 +78,7 @@ Steps:
 After that, you should see the directories `/labels`, `/images`, `/raw` and `/raw/labels` created automatically.
 
 ## Manual
-### Preparing image label creation
+### Preparing Image Label Creation
 1. start `manualSegmentation`<br><br>
 ![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")<br>
 3. on the left side load an image with `[Load Image]`
@@ -86,9 +90,9 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 ![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br>
 9. save the output image for later tracing with `[Save Image]`
    
-### Create image reference labels
-### Create and train a model
-### Predict an image from a model
+### Create Image Reference Labels
+### Train and Save a Model
+### Predict an Image from a Loaded Model
 
 ## Notice
 * Reading and saving image file names are not supported in Unicode due to OpenCV `imread` and `imwrite` function.
