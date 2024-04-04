@@ -7,6 +7,7 @@
   * [Installing the Executables](#installing-the-executables)
   * [Installing Python](#installing-python)
   * [Installing required packages](#installing-required-packages)
+  * [Installing script files](#installing-script-files)
 * **[Manual](#manual)**
 * **[Notice](#notice)**
     
@@ -51,6 +52,27 @@ Steps:
 
 You should see something like `Python 3.x.x` on the console output.
 ### Installing required packages
+You need `fastai v2` and `OpenCV` in order to use the script files.
+
+Documentation:
+* [fastai](https://docs.fast.ai/)
+* [OpenCV](https://docs.opencv.org/4.9.0/d6/d00/tutorial_py_root.html)
+
+Steps:
+1. start `cmd.exe` and type `pip install opencv-python`
+2. after that, type `pip install fastai`
+
+### Installing script files
+This is similar to installing the executables
+
+Steps:
+1. create a folder named *structureAnalysis* or similar
+2. copy both `manualSegmentation.py` and `semanticSegmentation.py` in this folder
+3. copy `codes.txt` in this folder
+4. start either one of the scripts by double clicking on the files
+
+After that, you should see the directories `/labels`, `/images`, `/raw` and `/raw/labels` created automatically.
+
 ## Manual
 ## Notice
 * Reading and saving image file names are not supported in Unicode due to OpenCV `imread` and `imwrite` function
