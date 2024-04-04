@@ -33,7 +33,7 @@ Use this script for creating and training a ResNet34 model. After that, predict 
 ## Installation
 The application can either be started using the executable or directly by running the scripts after installing Python and the required packages.
 ### Installing the Executable
-The executables are created using [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/) by Brent Vollebregt and can be downloaded [here](https://github.com/kerimyalcin95/deep-learning-segmentation/releases).
+The executables are created using [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/) by Brent Vollebregt and can be downloaded [here](https://github.com/kerimyalcin95/deep-learning-segmentation/releases) under *Assets*.
 ### Installing Python
 ### Installing required packages
 ## Manual
