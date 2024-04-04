@@ -12,14 +12,18 @@ import PIL.Image
 import PIL.ImageTk
 import numpy
 import os
+import sys
 
 
 class TkApp:
 
     def __init__(self, tkMain):
 
-        abspath = os.path.abspath(__file__)
-        dname = os.path.dirname(abspath)
+        if getattr(sys, 'frozen', False):
+            dname = os.path.dirname(sys.executable)
+        else:
+            dname = os.path.dirname(__file__)
+            
         os.chdir(dname)
 
         self.width = 0
@@ -38,7 +42,7 @@ class TkApp:
         self.aiLearner = 0
 
         # Main window config
-        tkMain.title("Semantic Segmentation")
+        tkMain.title("Semantic Segmentation [" + dname + "]")
         tkMain.geometry("1600x900")
         tkMain.minsize(900, 600)
         tkMain.state('zoomed')

@@ -10,15 +10,31 @@ import PIL.Image
 import PIL.ImageTk
 import numpy
 import os
+import sys
 
 
 class TkApp:
 
     def __init__(self, tkMain):
 
-        abspath = os.path.abspath(__file__)
-        dname = os.path.dirname(abspath)
+        if getattr(sys, 'frozen', False):
+            dname = os.path.dirname(sys.executable)
+        else:
+            dname = os.path.dirname(__file__)
+            
         os.chdir(dname)
+        
+        if not os.path.isdir("labels"):
+            os.makedirs("labels")
+            
+        if not os.path.isdir("images"):
+            os.makedirs("images")
+            
+        if not os.path.isdir("raw"):
+            os.makedirs("raw")
+            
+        if not os.path.isdir("raw/labels"):
+            os.makedirs("raw/labels")
         
         self.width = 0
         self.height = 0
@@ -33,13 +49,13 @@ class TkApp:
 
         self.invert = True
 
-        self.increment = tkinter.StringVar()
+        self.increment = tkinter.StringVar()    
         self.increment.set('0')
 
         self.cropEnabled = False
 
         # Main window config
-        tkMain.title("Manual Segmentation")
+        tkMain.title("Manual Segmentation [" + dname + "]")
         tkMain.geometry("1600x900")
         tkMain.minsize(900, 600)
         tkMain.state('zoomed')
@@ -613,19 +629,19 @@ class TkApp:
         cvImgAfterCropped = self.cvImgAfter[rectStarty:rectEndy,
                                             rectStartx:rectEndx]
 
-        cv2.imwrite('images/' +
+        cv2.imwrite('./images/' +
                     self.increment.get() +
                     '.png', cvImgBeforeCropped)
-        cv2.imwrite('raw/labels/' +
+        cv2.imwrite('./raw/labels/' +
                     self.increment.get() +
                     '_A.png', cvImgBeforeCropped)
-        cv2.imwrite('raw/labels/' +
+        cv2.imwrite('./raw/labels/' +
                     self.increment.get() +
                     '_B.png', cvImgAfterCropped)
         
         cvImgAfterCropped[cvImgAfterCropped == 255] = 1
 
-        cv2.imwrite('labels/' +
+        cv2.imwrite('./labels/' +
                     self.increment.get() +
                     '_P.png', cvImgAfterCropped)
         
