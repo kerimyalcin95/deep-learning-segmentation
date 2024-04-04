@@ -28,13 +28,11 @@ Features:
 * predict images with a trained ResNet34 model
 
 ### manualSegmentation.py
-Use this script for manual label creation. After that, create labels using the image crop tool.
-
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")
+Use this script for manual label creation. After that, create labels using the image crop tool.<br><br>
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")<br><br>
 ### semanticSegmentation.py
-Use this script for creating and training a ResNet34 model. After that, predict images using the trained model.
-
-![Image of semanticSegmentation.py after predicting an image using a trained model](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation01.jpg "Screenshot of semanticSegmentation.py in action")
+Use this script for creating and training a ResNet34 model. After that, predict images using the trained model.<br><br>
+![Image of semanticSegmentation.py after predicting an image using a trained model](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation01.jpg "Screenshot of semanticSegmentation.py in action")<br><br>
 ## Installation
 The application can either be started using the executable or directly by running the scripts after installing Python and the required packages.
 ### Installing Executables
@@ -79,18 +77,32 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 
 ## Manual
 ### Preparing Image Label Creation
-1. start `manualSegmentation`<br><br>
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")<br>
-3. on the left side load an image with `[Load Image]`
-4. adjust thresholding output using brightness and gaussian-blur filters
-5. adjust brush size and brush color with `[Black/White]`
-6. invert the image with `[Invert]`
-7. align both previews with `[Sync]`
-8. on the right side trace image features using the brush tool<br><br>
-![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br>
-9. save the output image for later tracing with `[Save Image]`
+1. start `manualSegmentation`
+2. on the left side load an image with `[Load Image]`<br><br>
+![Image of manualSegmentation.py after loading an image.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")<br><br>
+3. adjust thresholding output using brightness and gaussian-blur filters
+4. adjust brush size and brush color with `[Black/White]`
+5. invert the image with `[Invert]`
+6. align both previews with `[Sync]`
+7. on the right side trace image features using the brush tool<br><br>
+![Image of manualSegmentation.py after tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br><br>
+8. save the output image for later tracing with `[Save Image]`
+9. close `manualSegmentation`
    
 ### Create Image Reference Labels
+1. start `manualSegmentation`
+2. on the left side load an image with `[Load Image]`<br><br>
+![Image of manualSegmentation.py after loading an image.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation02.jpg "Screenshot of manualSegmentation.py in action")<br><br>
+3. on the right side load the corresponding image you have prepared for image label creation<br><br>
+![Image of manualSegmentation.py after tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation03.jpg "Screenshot of manualSegmentation.py in action")<br><br>
+4. set image size (default: 336x336 px)
+5. set image increment (default: 0) which saves each image counting upwards
+6. on the right side click to save one label each (until you have about 60-80 labels; image increment adds one [increments] each time)<br><br>
+![Image of manualSegmentation.py after loading an image and tracing.](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/manualSegmentation01.jpg "Screenshot of manualSegmentation.py in action")<br><br>
+7. close `manualSegmentation`
+
+You find the labels in `/images`, `/labels` and `/raw/labels`. The labels in `/images` and `/labels` are required to train a model. Use the labels in `/raw/labels` for your own documentation purposes.
+
 ### Train and Save a Model
 ### Predict an Image from a Loaded Model
 
