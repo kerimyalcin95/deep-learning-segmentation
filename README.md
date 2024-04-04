@@ -78,3 +78,4 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 * Reading and saving image file names are not supported in Unicode due to OpenCV `imread` and `imwrite` function
 * Cancelling the file dialog without selecting a path can lead to termination of the app
 * an internet connection is required to create the ResNet32 model
+* if `semanticSegmentation` app does not respond due to threading you have to restart the application
