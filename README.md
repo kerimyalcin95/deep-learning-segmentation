@@ -16,16 +16,34 @@
 * **[Notice](#notice)**
     
 ## About
+Used for image label creation, ResNet34 neural network model (arch) training and image prediction.
 Based on the bachelor-thesis "Microstructure analysis of materials with the assistance of artificial technology" by Kerim Yalcin from Feb 2024. 
-  
+
+Usage examples:
+* metallographic image segmentation 
+* medical image segmentation (tumor detection, organ detection)
+* object detection
+* road segmentation
+* crop yield detection in agriculture
+* microscopy image analysis
+
 Features:
 * read and save image files
 * use filters to change brightness and gaussian-blur amount of loaded images
 * apply binarization and tresholding
-* trace boundaries using resizable brush tool in black or white
-* create image labels for a Resnet34 model (max. 2 classifications)
-* create and train a ResNet34 model by using the labels
-* predict images with a trained ResNet34 model
+* invert image output
+* trace desired image features using resizable brush tool in black or white
+* create image labels for a model (max. 2 classifications)
+* create and train a model by using the labels
+* predict images with a model
+
+Implemented packages
+* `tkinter` - integrated GUI library in Python
+* `PIL` - 
+* `OpenCV`
+* `fastai v2`
+* `numpy`
+* `threading` - integrated threading library in Python
 
 ### manualSegmentation.py
 Use this script for manual label creation. After that, create labels using the image crop tool.<br><br>
@@ -104,7 +122,7 @@ After that, you should see the directories `/labels`, `/images`, `/raw` and `/ra
 You find the labels in `/images`, `/labels` and `/raw/labels`. The labels in `/images` and `/labels` are required to train a model. Use the labels in `/raw/labels` for your own documentation purposes.
 
 ### Train and Save a Model
-1. start `semanticSegmentation` (this may take a while depending of how fast your setup is)
+1. start `semanticSegmentation` (this may take a while depending on how fast your setup is)
 2. set to TRAIN mode with `[TRAIN mode/PREDICT mode]`
 3. set the path and name of the model with `[Save path]`
 4. start model training with `[TRAIN]` (this can take at least 10 min or more)
@@ -122,11 +140,13 @@ Epoch 1/6 : |███████----------------------------------------------
 ```
 
 ### Predict an Image From a Loaded Model
-1. start `semanticSegmentation` (this may take a while depending of how fast your setup is)
-2. on the left side load an image which you want to predict using `[Load Image]`
+1. start `semanticSegmentation` (this may take a while depending on how fast your setup is)
+2. on the left side load an image which you want to predict using `[Load Image]`<br><br>
+![Image of semanticSegmentation.py after loading an image](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation02.jpg "Screenshot of semanticSegmentation.py in action")<br><br>
 3. set to PREDICT mode with `[TRAIN mode/PREDICT mode]`
 4. load the model with `[Load path]`
-5. start model prediction with `[PREDICT]` (this can take at least 1 min or more)
+5. start model prediction with `[PREDICT]` (this can take at least 1 min or more)<br><br>
+![Image of semanticSegmentation.py after image prediction](https://github.com/kerimyalcin95/deep-learning-segmentation/raw/main/screenshots/semanticSegmentation03.jpg "Screenshot of semanticSegmentation.py in action")<br><br>
 6. on the right side save the predicted image using `[Save image]`
 7. close `semanticSegmentation`
 
