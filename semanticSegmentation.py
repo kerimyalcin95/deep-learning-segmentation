@@ -397,7 +397,7 @@ class TkApp:
                 center=(int(self.canvasAfter_x), int(self.canvasAfter_y)),
                 radius=numpy.uint8(self.brushRadius.get()),
                 color=(0, 0, 0),
-                thickness=0,
+                thickness=-1,
                 lineType=-1,
                 shift=0
             )
@@ -407,7 +407,7 @@ class TkApp:
                 center=(int(self.canvasAfter_x), int(self.canvasAfter_y)),
                 radius=numpy.uint8(self.brushRadius.get()),
                 color=(255, 255, 255),
-                thickness=0,
+                thickness=-1,
                 lineType=-1,
                 shift=0
             )
